@@ -36,7 +36,7 @@
     <lightning-layout multiple-rows if:true={products_data} class="slds-card">
         <template for:each={products_data} for:item="product" for:index="index">
             <lightning-layout-item flexibility="auto" size="12" small-device-size="12" medium-device-size="12"
-                large-device-size="3" key={product.Id} class="slds-m-vertical_small">
+                large-device-size="3" key={product.Id} class="slds-var-m-vertical_small">
                 <div>
                     <c-productcard product={product}>
                     </c-productcard>
