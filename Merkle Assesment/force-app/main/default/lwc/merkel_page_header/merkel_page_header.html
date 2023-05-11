@@ -7,9 +7,10 @@
 -->
 <template>
     <lightning-layout class="container slds-var-m-around_medium">
-        <lightning-layout-item padding="around-small" size="12">
+        <lightning-layout-item padding="around-small" size="12" small-device-size="12" medium-device-size="12"
+            large-device-size="12">
             <span class="slds-icon_container slds-icon-utility-announcement" title={description}>
-                <lightning-icon icon-name={icon_name} alternative-text="Light bulb" title={icon_name} variant="success"
+                <lightning-icon icon-name={icon_name} alternative-text={icon_name} title={icon_name} variant="success"
                     size="large"></lightning-icon>
             </span>
             <span class="slds-var-p-left_small header_text slds-var-m-top_x-small">{header_name}</span>
