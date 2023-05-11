@@ -1,0 +1,9 @@
+ul {
+    list-style-type: circle;
+    font-weight: 600;
+    text-align: left;
+}
+
+.error-grid {
+    margin: 0 auto 5px;
+}

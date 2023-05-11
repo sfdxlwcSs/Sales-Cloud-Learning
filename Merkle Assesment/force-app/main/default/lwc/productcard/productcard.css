@@ -1,0 +1,248 @@
+@font-face {
+/*
+font family is used to give a name to the custom font,
+you use this for referencing the custom font later
+*/
+font-family: "primary_font";
+/*
+This is the location of the Custom Font, note, I have stored in a ZIP file
+*/
+src: url('/resource/assesment/Roboto-Regular.ttf') format('TrueType');
+}
+
+/* Frame 3640 */
+
+.frame3640 {
+position: absolute;
+/* width: 78px; */
+/* height: 20px; */
+left: 13px;
+top: 18px;
+}
+
+.badge_custom {
+--sds-c-badge-color-background: white;
+}
+
+
+.card13 {
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 10px;
+gap: 15px;
+isolation: isolate;
+position: relative;
+width: 316px;
+height: 691px;
+left: 0px;
+top: 0px;
+background: #FFFFFF;
+box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Frame 3626 */
+.frame3626 {
+
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+width: 316px;
+height: 316px;
+border-bottom: 1px solid #DCDDDE;
+
+
+
+}
+
+/* Frame 3628 */
+.frame3628 {
+white-space: nowrap;
+align-items: flex-start;
+padding: 10px 10px 0px 15px;
+gap: 10px;
+width: 126px;
+height: 48px;
+}
+
+/* Frame 13 */
+.frame13 {
+    white-space: nowrap;
+    padding-left: 15px;
+    font-style: normal;
+    font-size: 14px;
+    font-family:'primary_font';
+
+}
+
+/* Frame 60 */
+
+.frame60 {
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 0px 4px 16px;
+gap: 10px;
+width: 78px;
+height: 32px;
+
+}
+
+.currency_value {
+width: 62px;
+height: 28px;
+font-family: 'primary_font';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+color: #000000;
+}
+
+/* Frame 15 */
+.frame15 {
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+width: 316px;
+height: 80px;
+
+
+}
+
+/* Group 13 */
+
+.sub_section_divider {
+    width: 291px;
+    height: 80px;
+    border-top: 3px solid #DCDDDE;
+    margin-left: 5%;
+}
+
+
+
+/* Frame 3634 */
+
+.frame3634 {
+/* Auto layout */
+
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px 15px 10px;
+gap: 10px;
+width: 316px;
+height: 70px;
+
+
+}
+
+/* Button/Secondary */
+
+.button_secondary {
+box-sizing: border-box;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 10px;
+cursor: pointer;
+width: 291px;
+height: 40px;
+/* Proximo Copper */
+border: 1.5px solid #C67A4F;
+border-radius: 34px;
+
+
+}
+
+.button_font{
+    font-family: 'primary_font';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.img_product {
+    height: 196.68px;
+}
+
+.product_image_container {
+position: absolute;
+width: 226px;
+left: 45px;
+top: 60px;
+
+}
+
+.product_name {
+width: 101px;
+height: 38px;
+
+/* Body Text Bold */
+
+font-family:'primary_font';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: flex-end;
+
+/* Black */
+
+color: #000000;
+}
+
+
+
+
+.product_name_container {
+font-family:'primary_font';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: flex-end;
+color: #000000;
+}
+.product_packaging_container {
+color: #505050;
+font-size: small;
+}
+
+.product_inventory_container {
+    color: #000000;
+    font-weight: 700;
+}
+
+.qty {
+    font-family:'primary_font';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+color: #000000;
+
+}

@@ -1,0 +1,72 @@
+<!--
+@description       : 
+@author            : Somnath Sharma
+@group             : 
+@last modified on  : 11-05-2023
+@last modified by  : Somnath Sharma
+-->
+<template>
+    <div> <c-custom-toast auto-close-time="8000"></c-custom-toast></div>
+    <div class="card13" if:true={product}>
+        <div class="frame3626">
+            <div class="frame3640" if:true={product.PreOrder}>
+                <lightning-badge label={label.Pre_Order} icon-name="utility:clock" icon-position="start"
+                    class="badge_custom"></lightning-badge>
+            </div>
+            <div class="product_image_container">
+                <img class="img_product" src={url} />
+            </div>
+        </div>
+        <lightning-layout>
+            <lightning-layout-item size="4">
+                <ul class="frame3628">
+                    <li class="product_name_container ">{product.Name}</li>
+                    <li class="product_packaging_container"> ({product.QuantityUnitOfMeasure})</li>
+                </ul>
+            </lightning-layout-item>
+            <lightning-layout-item size="6">
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout>
+            <lightning-layout-item size="6">
+                <ul class="frame13">
+                    <li><span class="product_inventory_container ">Item#:</span>&nbsp; <span
+                            style="color: #505050;">{product.ProductCode}</span></li>
+                    <li> <span class="product_inventory_container ">Brand:</span>&nbsp; <span
+                            style="color: #505050;">{product.Brand}</span></li>
+                    <li> <span class="product_inventory_container ">Available Inventory:</span>&nbsp; <span
+                            style="color: #505050;">
+                            {product.Inventory}</span></li>
+                </ul>
+            </lightning-layout-item>
+            <lightning-layout-item size="6">
+            </lightning-layout-item>
+        </lightning-layout>
+        <div class="frame60">
+            <span class="currency_value">${product.ProductPrice}</span>
+        </div>
+        <lightning-layout>
+            <lightning-layout-item size="12">
+                <ul class="frame15 sub_section_divider">
+                    <li><span class="qty">QTY</span>&nbsp;
+                        <span>
+                            <lightning-icon icon-name="utility:info" size="xx-small" alternative-text="Qty"
+                                title="Qty"></lightning-icon>
+                        </span>
+                    </li>
+                    <li>
+                        <c-merkel-_counter onmyqtyevent={handleCustomEvent}></c-merkel-_counter>
+                    </li>
+                </ul>
+            </lightning-layout-item>
+        </lightning-layout>
+        <div class="frame3634">
+            <div class="button_secondary" onclick={handleClick} data-buttonname={label.Button_Label}
+                data-productname={product.Name}>
+                <span class="button_font">{label.Button_Label}</span>
+            </div>
+        </div>
+
+    </div>
+
+</template>

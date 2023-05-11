@@ -1,0 +1,36 @@
+.rectangle38{
+
+    width: 26.09px;
+    height: 27.39px;
+    left: 19.24px;
+    top: 31.3px;
+    background: #797979;
+    opacity: 0.15;
+    border-radius: 32.6087px 0px 0px 32.6087px;  
+    cursor: pointer; 
+}
+
+.rectangle39 {
+   
+width: 26.09px;
+height: 27.39px;
+left: 145.76px;
+top: 58.7px;
+background: #797979;
+opacity: 0.15;
+border-radius: 32.6087px 0px 0px 32.6087px;
+transform: rotate(-180deg);
+cursor: pointer;
+}
+
+.rectangle40 {
+width: 62.61px;
+height: 1.3px;
+left: 51.85px;
+top: 58.7px;
+background: #EBEBEB;
+text-align: center;
+}
+span{
+    font-weight: bolder;
+}

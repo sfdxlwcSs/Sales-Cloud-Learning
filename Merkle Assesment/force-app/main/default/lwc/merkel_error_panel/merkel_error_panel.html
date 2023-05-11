@@ -1,0 +1,24 @@
+<!--
+  @description       : 
+  @author            : Somnath Sharma
+  @group             : 
+  @last modified on  : 08-05-2023
+  @last modified by  : Somnath Sharma
+-->
+<template>
+    <div
+        class="slds-grid slds-gutters error-grid slds-box slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error">
+        <div class="slds-col slds-size_4-of-12 slds-text-align_center ">
+            <span>Errors Encountered.</span>
+        </div>
+        <div class="slds-col slds-size_8-of-12" role="alert">
+            <ul>
+                <template for:each={errormessagearray} for:item="err">
+                    <li key={err}>
+                        {err}
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </div>
+</template>

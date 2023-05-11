@@ -1,0 +1,19 @@
+<!--
+  @description       : 
+  @author            : Somnath Sharma
+  @group             : 
+  @last modified on  : 11-05-2023
+  @last modified by  : Somnath Sharma
+-->
+<template>
+    <lightning-layout class="container slds-var-m-around_medium">
+        <lightning-layout-item padding="around-small" size="12">
+            <span class="slds-icon_container slds-icon-utility-announcement" title={description}>
+                <lightning-icon icon-name={icon_name} alternative-text="Light bulb" title={icon_name} variant="success"
+                    size="large"></lightning-icon>
+            </span>
+            <span class="slds-var-p-left_small header_text slds-var-m-top_x-small">{header_name}</span>
+        </lightning-layout-item>
+    </lightning-layout>
+
+</template>
