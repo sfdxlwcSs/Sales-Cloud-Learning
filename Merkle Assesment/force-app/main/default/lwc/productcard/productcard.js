@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : Somnath Sharma
  * @group             : 
- * @last modified on  : 11-05-2023
+ * @last modified on  : 12-05-2023
  * @last modified by  : Somnath Sharma
 **/
 import { LightningElement, wire, api } from 'lwc';
@@ -21,6 +21,8 @@ export default class Productcard extends LightningElement {
         Button_Label
     }
     quanity = 0;
+    //if the width needs to be varied then
+    @api card_width = '316px';
 
 
 
@@ -42,6 +44,9 @@ export default class Productcard extends LightningElement {
 
     connectedCallback() {
         this.url = this.formImageurl();
+        var css = this.template.host.style;
+        css.setProperty('--modalWidth', this.card_width);
+
     }
 
     formImageurl() {
