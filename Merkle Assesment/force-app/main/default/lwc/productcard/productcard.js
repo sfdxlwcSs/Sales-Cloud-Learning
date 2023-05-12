@@ -29,7 +29,7 @@ export default class Productcard extends LightningElement {
         let buttonClicked = event.currentTarget.dataset.buttonname;
         if (buttonClicked === this.label.Button_Label) {
             if (this.quanity === 0) {
-                this.template.querySelector('c-custom-toast').showToast('warning', 'Please increase the QTY to add Product to cart');
+                this.template.querySelector('c-custom-toast').showToast('warning', 'Please increase the QTY to add Product to cart.');
             }
             else {
                 this.template.querySelector('c-custom-toast').showToast('success', this.quanity + ' - ' + event.currentTarget.dataset.productname + ' added to cart.');

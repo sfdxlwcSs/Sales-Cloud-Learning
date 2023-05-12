@@ -2,26 +2,10 @@
   @description       : 
   @author            : Somnath Sharma
   @group             : 
-  @last modified on  : 11-05-2023
+  @last modified on  : 12-05-2023
   @last modified by  : Somnath Sharma
 -->
 <template>
-    <!-- <div class="slds-card">
-        <template if:true={products_data}>
-            <div class="content">
-                <template for:each={products_data} for:item="product" for:index="index">
-                    <c-productcard key={product.Id} product={product} class="slds-var-m-around_x-small">
-                    </c-productcard>
-                </template>
-            </div>
-        </template>
-        <template if:true={show_spinner}>
-            <c-merkel-_custom-_bar-_format-_spinner></c-merkel-_custom-_bar-_format-_spinner>
-        </template>
-        <template if:true={showErrPanel}>
-            <c-merkel-_error-_panel errormessagearray={error_array}></c-merkel-_error-_panel>
-        </template>
-    </div> -->
 
     <lightning-layout multiple-rows>
         <lightning-layout-item flexibility="auto" padding="around-small" size="12" small-device-size="12"
@@ -35,7 +19,7 @@
     </lightning-layout>
     <lightning-layout multiple-rows if:true={products_data} class="slds-card">
         <template for:each={products_data} for:item="product" for:index="index">
-            <lightning-layout-item flexibility="auto" size="12" small-device-size="12" medium-device-size="12"
+            <lightning-layout-item flexibility="auto" size="12" small-device-size="12" medium-device-size="6"
                 large-device-size="3" key={product.Id} class="slds-var-m-vertical_small">
                 <div>
                     <c-productcard product={product}>
