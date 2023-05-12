@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : Somnath Sharma
  * @group             : 
- * @last modified on  : 09-05-2023
+ * @last modified on  : 12-05-2023
  * @last modified by  : Somnath Sharma
 **/
 import { LightningElement, api, track } from 'lwc';
@@ -35,7 +35,7 @@ export default class CustomToast extends LightningElement {
     }
 
     get innerClass() {
-        return 'slds-icon_container slds-icon-utility-' + this.type + ' slds-icon-utility-success slds-m-right_small slds-no-flex slds-align-top';
+        return 'slds-icon_container slds-icon-utility-' + this.type + ' slds-icon-utility-success slds-var-m-right_small slds-no-flex slds-align-top';
     }
 
     get outerClass() {
