@@ -34,6 +34,8 @@ export default class Productcard extends LightningElement {
                 this.template.querySelector('c-custom-toast').showToast('warning', 'Please increase the QTY to add Product to cart.');
             }
             else {
+
+                //can add custom logic to further check inventory against quantity added
                 this.template.querySelector('c-custom-toast').showToast('success', this.quanity + ' - ' + event.currentTarget.dataset.productname + ' added to cart.');
             }
 
