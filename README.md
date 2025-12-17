@@ -10,7 +10,7 @@ One record per unique file.
 
 
 
-ContentVersion
+ContentVersion (trigger Merkel_FileShare on ContentDocumentLink)
 
 Represents a specific version of the file.
 Fields: VersionData (binary), Title, ContentDocumentId.
