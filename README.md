@@ -1,4 +1,4 @@
-# Salescloud Product list UI on an LWR Site Salesforce
+# Sales Cloud Product list UI on an LWR Site Salesforce
 Product2 PriceBook2 and PricesbbokEntry
 Important Note:
 
