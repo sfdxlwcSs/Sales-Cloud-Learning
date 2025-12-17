@@ -1,4 +1,27 @@
 # Sales Cloud Product list UI on an LWR Site Salesforce
+ContentVersion, ContentDocument, and ContentDocumentLink
+These are part of Salesforce Files architecture:
+
+
+ContentDocument
+
+Represents the actual file (document) in Salesforce.
+One record per unique file.
+
+
+
+ContentVersion
+
+Represents a specific version of the file.
+Fields: VersionData (binary), Title, ContentDocumentId.
+Multiple versions can exist for one ContentDocument.
+
+
+
+ContentDocumentLink
+
+Links the ContentDocument to another Salesforce record (e.g., Account, Opportunity).
+Fields: LinkedEntityId (the record ID), ContentDocumentId.
 
 
 Sales Cloud perspective**, focusing on key entities, their relationships, and practical use cases:
