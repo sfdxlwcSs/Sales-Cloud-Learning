@@ -1,7 +1,7 @@
 # Sales Cloud Product list UI on an LWR Site Salesforce
 
 
-Here’s a **comprehensive summary of everything we discussed today from a Sales Cloud perspective**, focusing on key entities, their relationships, and practical use cases:
+Sales Cloud perspective**, focusing on key entities, their relationships, and practical use cases:
 
 ***
 
