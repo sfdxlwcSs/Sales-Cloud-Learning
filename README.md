@@ -43,6 +43,10 @@ Sales Cloud perspective**, focusing on key entities, their relationships, and pr
     *   Junction object between **Product2** and **Pricebook2**.
     *   Fields: `Pricebook2Id`, `Product2Id`, `UnitPrice`, `IsActive`, `UseStandardPrice`.
     *   Enables **different prices for the same product** across price books.
+    *   A price book is a list of products and their associated prices. Each product and its price is called a price book entry.
+Salesforce provides two types of price books—standard and custom.
+The standard price book is a master list of all products with their associated default or standard prices. It automatically lists all products and standard prices regardless of the custom price books that also contain them.
+A custom price book is a list of products with their custom or list prices, making them ideal for offering different prices to different market segments. Custom price books can contain discounted list prices or list prices that are higher than the standard price.
 
 *   **OpportunityLineItem**
     *   Links an Opportunity to a PricebookEntry.
